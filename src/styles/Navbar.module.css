@@ -1,0 +1,8 @@
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-items: center;
+    padding: .25em 1em .25em 1em;
+    background-color: rgb(78, 45, 102);
+    color: rgb(245, 235, 250)
+}

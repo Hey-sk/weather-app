@@ -1,0 +1,219 @@
+/* 
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default 
+*/
+.todayCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todayCity {
+    padding: 1rem 0 .3rem 0;
+    font-size: 1.75rem;
+}
+.todayIcon {
+    font-size: 4rem;
+}
+.todayTemp {
+    font-size: 4rem;
+}
+.todayHiLo {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.todayDescr {
+    padding: .5rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+.forecastContents {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.forecastCard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 30% 30% 30%;
+    background: rgb(239, 233, 239);
+    border-bottom: 1px solid rgba(85, 22, 81, 0.3);
+    color:rgb(46, 46, 48);
+    padding: 5px;
+    transition: height 1s;
+    transition: width 1s;
+}
+.forecastTime {
+    font-size: .85rem;
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding-right: 3rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.forecastIcon {
+    color: rgb(78, 45, 102);
+    place-self: center;
+    font-size: 2.5rem;
+    grid-column: 1/2;
+    grid-row: 2/5;
+
+}
+.forecastTemp {
+    font-size: 3rem;
+    align-self: end;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.forecastTempUOM {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.forecastDescr {
+    color: rgb(78, 45, 102);
+    font-weight: 800;
+    font-size: 1.15rem;
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .forecastTime {
+        font-size: 1.8rem;
+    }
+    .forecastTemp {
+        font-size: 3.5rem;
+    }
+    .forecastIcon {
+        font-size: 3rem;
+    }
+    .forecastDescr {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .forecastContents {
+    grid-template-columns: repeat(8, auto);
+  }
+  .forecastCard {
+    grid-template-columns: 35% 65%;
+    height: 95px;
+    width: 95px;
+  }
+  .forecastTime {
+    font-size: .75rem;
+  }
+  .forecastIcon {
+    font-size: 1.25rem;
+    grid-row: 2/4;
+  }
+  .forecastTemp {
+    letter-spacing: normal;
+    font-size: 1.2rem;
+    align-self: stretch;
+    place-content: center;
+    grid-row: 2/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forecastTempUOM {
+    font-size: .5rem;
+  }
+  .forecastDescr {
+    font-size: .75rem;
+    place-items: center;
+    grid-column: 1/-1;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .todayCard {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        max-width: 600px;
+        margin: auto;
+    }
+    .todayCity {
+        justify-self: center;
+        font-size: 2.6rem;
+        grid-column: 1/-1;
+    }
+    .todayIcon {
+        text-align: center;
+        font-size: 6rem;
+    }
+    .todayTemp {
+        font-size: 6rem;
+    }
+    .todayHiLo {
+        font-size: 1.5rem;
+        text-align: center;
+        grid-column: 1/-1;
+    }
+    .todayDescr {
+        font-size: 2.25rem;
+        text-align: center;
+        grid-column: 1/-1;
+    }
+    .forecastCard {
+        height: 120px;
+        width: 120px;
+    }
+    .forecastTime {
+        font-size: 1.15rem;
+    }
+    .forecastIcon {
+        font-size: 1.75rem;
+    }
+    .forecastTemp {
+        font-size: 1.75rem;
+        align-self: end;
+    }
+    .forecastDescr {
+        font-size: .85rem;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .forecastCard {
+        height: 140px;
+        width: 140px;
+    }
+    .forecastIcon {
+        font-size: 2.25rem;
+    }
+    .forecastTemp {
+        font-size: 2rem;
+    }
+    .forecastDescr {
+        font-size: 1rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .forecastCard {
+        height: 170px;
+        width: 170px;
+    }
+    .forecastIcon {
+        font-size: 2.5rem;
+    }
+    .forecastTemp {
+        font-size: 2.25rem;
+    }
+    .forecastDescr {
+        font-size: 1.25rem;
+    }
+} 
