@@ -172,7 +172,7 @@ export default function Weather({weatherData}) {
             <BannerCard
                 key={day}    
                 title={day}
-                description = {`high: ${hiTemp.toFixed(1)}° / low: ${loTemp.toFixed(1)}°`}
+                description = {`H:${hiTemp.toFixed(1)}° / L:${loTemp.toFixed(1)}°`}
                 contents={getForecastByDay(day)}
                 contentStyle={styles.forecastContents}
             />
