@@ -69,63 +69,74 @@ export default function Weather({weatherData}) {
                 return({
                     reg: <FontAwesomeIcon icon={faFaceSmile} />,
                     duo: <FontAwesomeIcon icon={faFaceSmileDuo} />,
-                    comment: ''
+                    comment: 'enjoy the weather',
                 })
             case 'few clouds':
                 return ({
                     reg: <FontAwesomeIcon icon={faCloud} />,
                     duo: <FontAwesomeIcon icon={faCloudDuo} />,
-                    comment: ''
+                    comment: 'a bit cloudy, eh?',
                 })
             case 'scattered clouds':
                 return ({
                     reg: <FontAwesomeIcon icon={faClouds} />,
                     duo: <FontAwesomeIcon icon={faCloudsDuo} />,
+                    comment: 'quite a bit cloudy, eh?',
                 })
             case 'broken clouds':
                 return ({
                     reg: <FontAwesomeIcon icon={faFaceClouds} />,
                     duo: <FontAwesomeIcon icon={faFaceCloudsDuo} />,
+                    comment: 'starting to clear up',
                 })
             case 'overcast clouds':
                 return ({
                     reg: <FontAwesomeIcon icon={faCloudFog} />,
                     duo: <FontAwesomeIcon icon={faCloudFogDuo} />,
+                    comment: 'pea soup!',
                 })
             case 'shower rain':
                 return ({
                     reg: <FontAwesomeIcon icon={faUmbrella} />,
                     duo: <FontAwesomeIcon icon={faUmbrellaDuo} />,
+                    comment: 'is it wet enough for you?',
                 })
             case 'rain':
                 return ({
                     reg: <FontAwesomeIcon icon={faUmbrellaAlt} />,
                     duo: <FontAwesomeIcon icon={faUmbrellaAltDuo} />,
+                    comment: "it's lashing outside! best stay indoors!",
                 })
             case 'thunderstorm':
                 return ({
                     reg: <FontAwesomeIcon icon={faBolt} />,
                     duo: <FontAwesomeIcon icon={faBoltDuo} />,
+                    comment: 'thunder and lightning-- how very exciting!',
                 })
             case 'snow':
                 return ({
                     reg: <FontAwesomeIcon icon={faSnowman} />,
                     duo: <FontAwesomeIcon icon={faSnowmanDuo} />,
+                    comment: 'yuck.',
                 })
             case 'light snow':
                 return ({
                     reg: <FontAwesomeIcon icon={faHatWinter} />,
-                    duo: <FontAwesomeIcon icon={faHatWinterDuo} />
+                    duo: <FontAwesomeIcon icon={faHatWinterDuo} />,
+                    comment: 'it could be worse...',
+
                 })
             case 'mist':
                 return ({
                     reg: <FontAwesomeIcon icon={faCloud} />,
                     duo: <FontAwesomeIcon icon={faCloudDuo} />,
+                    comment: "I'm getting misty just thinking about this weather.",
                 })
             default: 
                 return ({
                     reg: <FontAwesomeIcon icon={faBlockQuestion} />,
                     duo: <FontAwesomeIcon icon={faBlockQuestionDuo} />,
+                    comment: 'this is some weather we are having, no?',
                 })
             }            
         }
