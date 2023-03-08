@@ -69,7 +69,7 @@ export default function Weather({weatherData}) {
                 return({
                     reg: <FontAwesomeIcon icon={faFaceSmile} />,
                     duo: <FontAwesomeIcon icon={faFaceSmileDuo} />,
-                    comment: 'enjoy the weather',
+                    comment: 'enjoy the weather!',
                 })
             case 'few clouds':
                 return ({
