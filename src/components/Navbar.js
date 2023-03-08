@@ -16,7 +16,7 @@ export default function navbar() {
                 <div><FontAwesomeIcon icon={faShapes} size='2x' style={{"--fa-primary-color": "rgb(219, 154, 200)","--fa-secondary-color":"rgb(255,255,255)"}}/></div>
 
                 <div style={{textAlign:'center'}}>
-                    <h2>skeane.io &nbsp; | &nbsp;🌧️ &nbsp; weather &nbsp; ☀️</h2>
+                    <h2>skeane.io &nbsp;  |  &nbsp;🌧️ &nbsp; weather &nbsp; ☀️</h2>
                 </div>
 
                 {/* <Link href={`/settings/${username}`}> <FontAwesomeIcon icon={faGear} size='2x'/></Link> */}
