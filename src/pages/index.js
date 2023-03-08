@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import Weather from '@/components/Weather'
+import Weather from '@/pages/weather'
+import Link from 'next/link'
 
 export async function getStaticProps() {
   const locRes = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=01453,US&appid=${process.env.OPENWEATHER}`)
@@ -25,9 +26,9 @@ export default function Home({weatherData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Weather
-          weatherData={weatherData}
-        />
+        <div style={{height:'100vh', display:'grid', placeItems:'center'}}> 
+        <button><Link href="/weather"> Click to View Weather</Link></button>
+        </div> 
       </main>
     </>
   )

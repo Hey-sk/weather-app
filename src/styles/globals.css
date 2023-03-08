@@ -31,3 +31,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button {
+  border: none;
+  border-radius: 0;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5rem;
+}

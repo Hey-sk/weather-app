@@ -1,4 +1,4 @@
-import BannerCard from './BannerCard'
+import BannerCard from '../components/BannerCard'
 import styles from '../styles/Weather.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -28,6 +28,20 @@ import {
     faHatWinter as faHatWinterDuo,
     faBlockQuestion as faBlockQuestionDuo 
 } from '@fortawesome/pro-duotone-svg-icons';
+
+export async function getStaticProps() {
+    const locRes = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=01453,US&appid=${process.env.OPENWEATHER}`)
+    const locationData = await locRes.json()
+    const weatherRes = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${locationData.lat}&lon=${locationData.lon}&units=imperial&appid=${process.env.OPENWEATHER}`)
+    const weatherData = await weatherRes.json()
+    return {
+      props: {
+        locationData,
+        weatherData,
+      },
+    }
+  }
+
 
 export default function Weather({weatherData}) {
 
