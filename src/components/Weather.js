@@ -75,7 +75,7 @@ export default function Weather({weatherData}) {
                 return ({
                     reg: <FontAwesomeIcon icon={faCloud} />,
                     duo: <FontAwesomeIcon icon={faCloudDuo} />,
-                    comment: 'a bit cloudy, eh?',
+                    comment: 'a bit cloudy today, eh?',
                 })
             case 'scattered clouds':
                 return ({
